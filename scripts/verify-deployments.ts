@@ -11,7 +11,6 @@ import { go } from '@api3/promise-utils';
 import { config, deployments, ethers } from 'hardhat';
 
 import { chainsSupportedByDapis, chainsSupportedByOevAuctions } from '../data/chain-support.json';
-import managerMultisigAddresses from '../data/manager-multisig.json';
 
 const METADATA_HASH_LENGTH = 53 * 2;
 // https://github.com/Arachnid/deterministic-deployment-proxy/tree/be3c5974db5028d502537209329ff2e730ed336c#proxy-address
@@ -25,11 +24,9 @@ async function main() {
   for (const network of networks) {
     const provider = new ethers.JsonRpcProvider((config.networks[network] as any).url);
     const contractNames = [
-      ...(Object.keys(managerMultisigAddresses).includes(network) ? ['OwnableCallForwarder'] : []),
       ...(chainsSupportedByDapis.includes(network)
-        ? ['AccessControlRegistry', 'OwnableCallForwarder', 'Api3ServerV1', 'ProxyFactory']
-        : []),
-      ...(chainsSupportedByOevAuctions.includes(network) ? ['OevAuctionHouse'] : []),
+        ? ['Contract5']
+        : [])
     ];
 
     for (const contractName of contractNames) {

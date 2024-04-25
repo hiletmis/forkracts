@@ -1,0 +1,51 @@
+{
+  "address": "0x92456AAFf0642dA774076435E9cDeB50363F9d46",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "returnFalse",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "returnTrue",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7b1c1ef0ce58f109ccf36c1f026d09c6",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"returnFalse\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"returnTrue\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Test.sol\":\"Contract3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/Test.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\n\\ncontract Contract3  {\\n  \\n  function returnTrue() public pure returns(bool) {\\n    return true;\\n  }\\n\\n    function returnFalse() public pure returns(bool) {\\n        return false;\\n    }\\n\\n}\\n\",\"keccak256\":\"0xe3e28f7fd0a0f970b472d3414471dd9fb0aa42255925c71d29d6ca739bd8ce89\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50608a8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806329c14766146037578063f613a68714604e575b600080fd5b60005b604051901515815260200160405180910390f35b6001603a56fea26469706673582212201116e555de6b2b9a0c099ecc7b57cdb3e40ef04f1f2b95fd3d9abf027f47f26064736f6c63430008110033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806329c14766146037578063f613a68714604e575b600080fd5b60005b604051901515815260200160405180910390f35b6001603a56fea26469706673582212201116e555de6b2b9a0c099ecc7b57cdb3e40ef04f1f2b95fd3d9abf027f47f26064736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
