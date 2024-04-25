@@ -5,14 +5,17 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@openzeppelin/contracts':
+    specifier: ^5.0.2
+    version: 5.0.2
   ethers:
     specifier: ^6.11.1
     version: 6.11.1
 
 devDependencies:
   '@api3/chains':
-    specifier: ^4.17.1
-    version: 4.17.1(typescript@5.4.3)
+    specifier: ^5.1.0
+    version: 5.1.0(typescript@5.4.3)
   '@api3/commons':
     specifier: ^0.9.0
     version: 0.9.0(eslint@8.57.0)(typescript@5.4.3)
@@ -118,8 +121,8 @@ packages:
   /@adraffy/ens-normalize@1.10.1:
     resolution: {integrity: sha512-96Z2IP3mYmF1Xg2cDm8f1gWGf/HUVedQ3FMifV4kG/PQ4yEP51xDtRAEfhVNt5f/uzpNkZHwWQuUcu6D6K+Ekw==}
 
-  /@api3/chains@4.17.1(typescript@5.4.3):
-    resolution: {integrity: sha512-gPglE7PPm6TCdnDR+/EC5J8z4yrTS/eV/24PRK8HzkLwRkMx4UdnoNwQ2B00bGlQTkPnMuxTTnEzgyAnv3qhNQ==}
+  /@api3/chains@5.1.0(typescript@5.4.3):
+    resolution: {integrity: sha512-9A+UFY6EjeWN238jcdRsYlCIcps1qaXfrEAKwqkGQ8gjyeNvF+kWtrsuSNz1kVFstrhk5b8/9GFKqpk6f7ecFg==}
     dependencies:
       viem: 2.9.6(typescript@5.4.3)(zod@3.22.4)
       zod: 3.22.4
@@ -1271,6 +1274,10 @@ packages:
       '@nomicfoundation/solidity-analyzer-win32-ia32-msvc': 0.1.1
       '@nomicfoundation/solidity-analyzer-win32-x64-msvc': 0.1.1
     dev: true
+
+  /@openzeppelin/contracts@5.0.2:
+    resolution: {integrity: sha512-ytPc6eLGcHHnapAZ9S+5qsdomhjo6QBHTDRRBFfTxXIpsicMhVPouPgmUPebZZZGX7vt9USA+Z+0M0dSVtSUEA==}
+    dev: false
 
   /@openzeppelin/merkle-tree@1.0.6:
     resolution: {integrity: sha512-cGWOb2WBWbJhqvupzxjnKAwGLxxAEYPg51sk76yZ5nVe5D03mw7Vx5yo8llaIEqYhP5O39M8QlrNWclgLfKVrA==}
@@ -3864,7 +3871,6 @@ packages:
       is-hex-prefixed: 1.0.0
       strip-hex-prefix: 1.0.0
     dev: true
-    bundledDependencies: false
 
   /evp_bytestokey@1.0.3:
     resolution: {integrity: sha512-/f2Go4TognH/KvCISP7OUsHn85hT9nUkxxA9BEWxFn+Oj9o8ZNLm/40hdlgSLyuOimsrTKLUMEorQexp/aPQeA==}

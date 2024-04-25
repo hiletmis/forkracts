@@ -37,18 +37,13 @@
     "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
     "postpack": "./postpack.sh",
-    "test": "hardhat test --parallel",
-    "test:coverage": "hardhat coverage",
-    "test:extended": "EXTENDED_TEST=TRUE hardhat test --parallel",
-    "test:gas": "REPORT_GAS=TRUE hardhat test",
     "validate-deployment-config": "hardhat run scripts/validate-deployment-config.ts",
-    "validate-deployments": "hardhat run scripts/validate-deployments.ts",
     "verify-deployments": "hardhat run scripts/verify-deployments.ts",
     "verify-vendor-contracts": "hardhat run scripts/verify-vendor-contracts.ts",
     "write-example-env-file": "hardhat run scripts/write-example-env-file.ts"
   },
   "devDependencies": {
-    "@api3/chains": "^4.17.1",
+    "@api3/chains": "^5.1.0",
     "@api3/commons": "^0.9.0",
     "@api3/promise-utils": "^0.4.0",
     "@changesets/cli": "^2.27.1",
@@ -81,6 +76,7 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
     "ethers": "^6.11.1"
   }
 }
