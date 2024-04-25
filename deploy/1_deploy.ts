@@ -1,8 +1,6 @@
 import { deployments, ethers, network } from 'hardhat';
 
-import {
-  chainsSupportedByDapis,
-} from '../data/chain-support.json';
+import { chainsSupportedByDapis } from '../data/chain-support.json';
 import managerMultisigAddresses from '../data/manager-multisig.json';
 
 module.exports = async () => {
@@ -10,7 +8,7 @@ module.exports = async () => {
   const [deployer] = await ethers.getSigners();
 
   if (Object.keys(managerMultisigAddresses).includes(network.name)) {
-    const mockContract = 'Contract5'
+    const mockContract = 'Contract5';
     if (chainsSupportedByDapis.includes(network.name)) {
       await deployments.get(mockContract).catch(async () => {
         log(`Deploying ${mockContract}...`);
@@ -20,7 +18,6 @@ module.exports = async () => {
           deterministicDeployment: process.env.DETERMINISTIC ? ethers.ZeroHash : '',
         });
       });
-
     }
   } else {
     throw new Error(`${network.name} is not supported`);

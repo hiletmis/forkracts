@@ -1,4 +1,3 @@
-
 import { hardhatConfig } from '@api3/chains';
 import type { HardhatUserConfig } from 'hardhat/config';
 import '@nomicfoundation/hardhat-toolbox';
@@ -33,8 +32,7 @@ const config: HardhatUserConfig = {
 
 task(
   'compile',
-  'Compiles the entire project, building all artifacts, and overwrites contract metadata hash for consistent deterministic deployment addresses',
-
+  'Compiles the entire project, building all artifacts, and overwrites contract metadata hash for consistent deterministic deployment addresses'
 );
 
 // eslint-disable-next-line import/no-default-export

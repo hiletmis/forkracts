@@ -23,11 +23,7 @@ async function main() {
 
   for (const network of networks) {
     const provider = new ethers.JsonRpcProvider((config.networks[network] as any).url);
-    const contractNames = [
-      ...(chainsSupportedByDapis.includes(network)
-        ? ['Contract5']
-        : [])
-    ];
+    const contractNames = [...(chainsSupportedByDapis.includes(network) ? ['Contract5'] : [])];
 
     for (const contractName of contractNames) {
       const deployment = JSON.parse(fs.readFileSync(path.join('deployments', network, `${contractName}.json`), 'utf8'));
